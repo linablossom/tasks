@@ -32,3 +32,19 @@ function goals (laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
 function move (position, roll) {
   return position + roll * 2;
 }
+
+
+https://www.codewars.com/kata/be-concise-i-the-ternary-operator/train/javascript
+
+function describeAge(age) {
+let yourAge = "You're a(n) ";
+  if (age <= 12) {
+    return yourAge + "kid";
+  } else if (age >= 13 && age <= 17) {
+    return yourAge + "teenager";
+  } else if (age >= 18 && age <= 64) {
+    return yourAge + "adult";
+  } else {
+    return yourAge + "elderly";
+  }
+}
