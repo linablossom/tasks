@@ -34,17 +34,7 @@ function move (position, roll) {
 }
 
 
-https://www.codewars.com/kata/be-concise-i-the-ternary-operator/train/javascript
+// https://www.codewars.com/kata/be-concise-i-the-ternary-operator/train/javascript
 
-function describeAge(age) {
-let yourAge = "You're a(n) ";
-  if (age <= 12) {
-    return yourAge + "kid";
-  } else if (age >= 13 && age <= 17) {
-    return yourAge + "teenager";
-  } else if (age >= 18 && age <= 64) {
-    return yourAge + "adult";
-  } else {
-    return yourAge + "elderly";
-  }
-}
+const describeAge = a => 
+  "You're a(n) " + (a <= 12 ? "kid" : (a >= 13 && a <= 17 ? "teenager" : (a >= 18 && a <= 64 ? "adult" : "elderly")));
