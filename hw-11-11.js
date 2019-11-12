@@ -46,6 +46,10 @@ function maps(x){
 // https://www.codewars.com/kata/find-the-first-non-consecutive-number/train/javascript
 
 function firstNonConsecutive (arr) {
-  const res = arr.find((item, index) => index && (item - 1 !== arr[index - 1]) || arr.length <= 1);
-  return typeof res === 'undefined' ? null : res;
+  for(let i = 0; i < arr.length-1; i++) {
+    if(arr[i] + 1 !== arr[i + 1]) {    
+      return arr[i + 1];
+    }
+  }
+  return null;
 }
